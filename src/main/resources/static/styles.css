@@ -1,0 +1,56 @@
+header {
+  height: 16vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 30vh;
+}
+
+hr {
+  margin: 0;
+}
+
+button {
+  width: 200px;
+  height: 30px;
+  margin: 20px;
+}
+
+input {
+  width: 600px;
+  height: 30px;
+  margin: 20px;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.jokesSectionClass {
+  height: 50vh;
+}
+
+.jokesSectionClass section {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 1.5rem;
+}
+
+.fetchQuotesSectionClass {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quoteInputSectionClass {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

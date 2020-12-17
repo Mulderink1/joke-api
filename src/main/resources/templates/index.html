@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Joke Api</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <p th:text="'Hello, ' + ${name} + '!'" />
+  </header>
+  <hr>
+  <section class="jokesSectionClass"></section>
+  <hr>
+  <main>
+    <section class="fetchQuotesSectionClass">
+      <button onclick="fetchQuotes()">Get Favorite Jokes</button>
+      <button onclick="fetchGeekApiJoke()">Get Random Funny Geek Joke</button>
+      <button onclick="addJoke(document.getElementsByClassName('displayJokeClass')[0].innerText)">Save Joke</button>
+    </section>
+    <section class="quoteInputSectionClass">
+      <input type="text" class="quoteInputClass">
+      <button onclick="addJoke(document.getElementsByClassName('quoteInputClass')[0].value)">Add Joke</button>
+    </section>
+  </main>
+<footer>
+  <script src="/main.js"></script>
+  <script th:inline="javascript">
+    const USERNAME = [[${name}]]
+  </script>
+</footer>
+</body>
+</html>
